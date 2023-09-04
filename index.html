@@ -6,10 +6,41 @@
     <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
     <link rel="stylesheet" href="./styles/style.css">
     <script src="script.js" defer></script>
-    <title>Título</title>
+    <title>Library</title>
 </head>
 <body>
-    <h1>Texto de prueba</h1>
-    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum</p>
+    <header>
+        <h1>biblioteca</h1>
+        <button>Iniciar sesión</button>
+    </header>
+    
+    <main>
+        <button class="btnAdd">Añadir libro</button>
+
+        <div id="overlay" class="overlay"></div>
+
+        <div id="modalBox" class="modal">
+            <form id="formAddBook" class="add-book-form">
+                <h3>Añadir libro</h3>
+                
+                <input id="title" class="input" type="text" placeholder="Título" maxlength="100" required="">
+                <input id="author" class="input" type="text" placeholder="Autor" maxlength="70" required="">
+                <input id="pages" class="input" type="number" placeholder="Número de páginas" max="10000" required="">
+                <input type="submit" value="Añadir libro" class="submit-button">
+            </form>
+        </div>
+
+        <div class="grid-libros"></div>
+
+        <button class="boton-prueba">a</button>
+    </main>
+
+    <footer>
+        <p>Copyright © 2023 Samuel-96</p>
+
+        <a href="https://github.com/Samuel-96" target="_blank">
+            <img src="./resources/github-logo.png"/>
+        </a> 
+    </footer>
 </body>
 </html>

@@ -26,6 +26,10 @@ button{
   cursor: pointer;
 }
 
+.btnAdd{
+  color: #1a664d;
+}
+
 main{
   background-color: rgb(18, 21, 24);
   text-align: center;
@@ -49,10 +53,14 @@ main{
   z-index: 2; /* Sit on top */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 300px;
   height: 200px;
+  transform: translate(-50%, -50%);
+}
 
+.read{
+  display: flex;
+  gap: 5px;
 }
 
 .add-book-form{
@@ -92,12 +100,15 @@ main{
 .grid-libros{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px; /* Espacio horizontal entre libros */
+  grid-row-gap: 20px; /* Espacio vertical entre filas */
+  margin: 10px;
 }
 
 footer{
   height: 10px;
   width: 100%;
-  position: absolute;
+
   bottom: 0;
   padding: 1em;
   display: flex;

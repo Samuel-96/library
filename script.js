@@ -1,3 +1,21 @@
+//creacion de la clase
+class Book{
+  constructor(title, author, pages, bookRead){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.bookRead = bookRead;
+  }
+
+  mostrarInfo() {
+    return this.title + " by " + this.author + ". " + this.pages + " pages. " + this.bookRead;
+  }
+  
+  addBookToLibrary(){
+
+  }
+}
+
 const libreria = [];
 
 const libreriaEjemplo = [new Book("ejemplo1","autor1",100,"read"), new Book("ejemplo1","autor1",100,"read")];
@@ -40,7 +58,8 @@ submitButton.addEventListener("click", e => {
   const isRead = checkboxForm.checked;
 
   // Creo un nuevo libro
-  const book = new Book(title, author, pages, isRead);
+  //const book = new Book(title, author, pages, isRead);
+  let book = new Book(title, author, pages, isRead);
   
   // Agrego el libro a la librería
   libreria.push(book);
@@ -145,7 +164,7 @@ submitButton.addEventListener("click", e => {
   console.log(libreria);
 
 })
-
+/*
 function Book(title, author, pages, bookRead){
     this.title = title;
     this.author = author;
@@ -155,8 +174,5 @@ function Book(title, author, pages, bookRead){
     this.info = function() {
         return title + " by " + author + ". " + pages + " pages. " + bookRead;
     }
-}
+}*/
 
-function addBookToLibrary() {
-    
-  }
